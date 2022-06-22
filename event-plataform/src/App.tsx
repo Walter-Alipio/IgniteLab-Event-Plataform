@@ -1,6 +1,7 @@
 import { gql, useQuery } from "@apollo/client"
 import { useEffect } from "react"
 import { client } from "./lib/apollo"
+import { Event } from "./pages/Event";
 
 
 
@@ -27,11 +28,7 @@ function App() {
 
   console.log(data)
   return (
-    <ul>
-      {data?.lessons.map(lesson=>{
-        return <li key={lesson.id}>{lesson.title}</li>
-      })}
-    </ul>
+    <Event />
   )
 }
 //data? só faz a query onde data for != de vazio
