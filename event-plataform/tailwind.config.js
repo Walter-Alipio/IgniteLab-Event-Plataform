@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.tsx"], //todos os arquivos dentro da pasta src utilizarão tailwind
   theme: {
     extend: {
+      backgroundImage: {
+        blur: "url(/src/assets/blur-background.png)",
+      },
       fontFamily: {
         sans: "Roboto, sans-serif",
       },
