@@ -4,4 +4,4 @@
 
 ## Descrição:
 
-Plataforma de eventos criada em React, GraphQL e GraphCMS
+Plataforma de eventos criada em React, Tailwindcss, Typescript, GraphQL e GraphCMS
