@@ -3,6 +3,7 @@ import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-reac
 import { useGetLessonBySlugQuery } from "../graphql/generated";
 
 //import '@vime/core/themes/default.css';
+import ReactPlayer from 'react-player/youtube'
 
 interface VideoProps{
   lessonSlug: string;
@@ -34,6 +35,12 @@ export function Video(props: VideoProps){
             <Youtube videoId={data.lesson.videoId}/>
             <DefaultUi />
           </Player> */}
+          <ReactPlayer 
+            url={`https://www.youtube.com/watch?v=${data.lesson.videoId}`} 
+            controls={true}
+            width='100%'
+            height='100%'
+            />
         </div>
       </div>
       <div className="p-8 max-w-[1100px] mx-auto ">
